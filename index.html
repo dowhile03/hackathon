@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" type="html/css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" type="html/css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Teamdowhile</title>
+    <link rel="icon" href="./images/mages.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html">Teamdowhile</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link mr-3" href="index.html">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-3" href="./aboutus/about.html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-3" href="./contactus/contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  mr-3"
+                        href="https://drive.google.com/drive/folders/1yj85ifC2toG-3Lue0OfPxgYSUMskD3Ap?usp=sharing"
+                        target="blank" aria-disabled="false">Quizes</a>
+                </li>
+
+                <li class="nav-item"> <a class="nav-link mr-3" href="./blog/blogMain.html">Blog</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Videos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./htmlcourse/course.html">HTML</a>
+                        <a class="dropdown-item" href="./pythoncourse/Python.html">Python</a>
+                        <a class="dropdown-item" href="./javacourse/java.html">Java</a>
+                        <a class="dropdown-item" href="./knowledgebooster/Knowledge.html">Knowledge Booster</a>
+                    </div>
+                </li>
+
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 mr-3" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 mr-3" type="submit">Search</button>
+                <button type="button" class="btn btn-outline-warning" id="login_btn" data-toggle="modal"
+                    data-target="#exampleModal" style="display: none;">
+                    LogIn
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Login With Security of Google</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                This is an Easy and one-click Login . This login is Authenticated by the security of
+                                Google.
+                                <br> Welcome to the Journey <br>
+                                -Teamdowhile
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-danger" data-dismiss="modal"
+                                    onclick="loginMe()">Login Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p id="helloUser" style="color: white; font-weight: bold;"></p>
+
+
+                <button type="button" id="logout_btn" class="btn btn-outline-info" onClick="logoutMe()"
+                    style="display: none;">Logout</button>
+
+
+            </form>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/55.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome to Programming World with Teamdowhile</h2>
+                    <p> Stay Connected and we will make it possible with Tech</p>
+                    <button type="button" class="btn btn-primary"><a href="./aboutus/about.html"
+                            style="text-decoration: none; color: white;">About us / Mission / Vision</a></button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/44.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Join the Community of Programmers.</h2>
+                    <p>Login with our Website and become the member and Give a kickstart to your Journey.</p>
+                    <button type="button" class="btn btn-secondary"><a href="./aboutus/about.html"
+                            style="text-decoration: none; color: white;"> About us / Mission / Vision</a></button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/22.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Join the High Quality Courses.</h2>
+                    <p>Practise Coding and give Quizzes , read the doc.</p>
+
+                    <button type="button" class="btn btn-success"><a href="./aboutus/about.html"
+                            style="text-decoration: none; color: white;">About us / Mission / Vision</a> </button>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="container-fluid marketing">
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="./images/bl.jpg" class="bd-placeholder-img card-img-top" width="100%"
+                                height="225">
+
+                            <div class="card-body">
+                                <h3 class="card-text">Blogs</h3>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                                                href="./blog/blogMain.html">View</a></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="./images/s.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+                            <div class="card-body">
+                                <h3 class="card-text">Source Code</h3>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button"
+                                            class="btn btn-sm btn-outline-secondary"><a href="https://drive.google.com/drive/folders/11eu4yV9zgWJx65UqjiyLvPyN4oDnrVs8?usp=sharing" target="blank">View</a></button>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="./images/k.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+                            <div class="card-body">
+                                <h3 class="card-text">Knowledge Booster</h3>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                                                href="./knowledgebooster/Knowledge.html">View</a></button>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="./images/h.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+                            <div class="card-body">
+                                <h3 class="card-text">HTML</h3>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                                                href="./htmlcourse/course.html">View</a></button>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="./images/p.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+                            <div class="card-body">
+                                <h3 class="card-text">Python</h3>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                                                href="./pythoncourse/Python.html">View</a></button>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="./images/j.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+                            <div class="card-body">
+                                <h3 class="card-text">Java</h3>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                                                href="./javacourse/java.html">View</a></button>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- chat bot tile starts -->
+
+
+<div class="col-md-12">
+    <div class="card mb-4 shadow-sm">
+        <img src="https://www07.abb.com/images/librariesprovider89/default-album/abb-robotics-cover-image.jpg?sfvrsn=1eec2e16_1" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+        <div class="card-body">
+            <h3 class="card-text" >Chat Bot</h3>
+
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group" >
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                            href="./chatbot/demo/demo-ddg.html">Chat</a></button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- chat bot tile ends -->
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quotes Section -->
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+
+                        <h3 class="mb-0">Bill Gates</h3>
+
+                        <p class="card-text mb-auto">I always Choose the Lazy Person to the Hardest
+                            job as he will find the Easy Way of doing it.</p>
+
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="./images/bill.jpg" alt="" class="bd-placeholder-img" width="200" height="250">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+
+                        <h3 class="mb-0">Stephen Hawking</h3>
+
+                        <p class="mb-auto">Success in creating AI would be the biggest event in human history.
+                            Unfortunately, it
+                            might also be the last, unless we learn how to avoid the risks.</p>
+
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="./images/stephe.jpg" alt="" class="bd-placeholder-img" width="200" height="250">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+
+                        <h3 class="mb-0">Elbert Hubbard</h3>
+
+                        <p class="card-text mb-auto">One machine can do the work of fifty ordinary men. No machine can
+                            do the
+                            work of one extraordinary man.
+
+                        </p>
+
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="./images/elbery.jpg" alt="" class="bd-placeholder-img" width="200" height="250">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+
+                        <h3 class="mb-0">Mark Zuckerburg</h3>
+
+                        <p class="mb-auto">“The biggest risk is not taking any risk… In a world that’s changing really
+                            quickly,
+                            the only strategy that is guaranteed to fail, is not taking risks..</p>
+
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="./images/mark.jpg" alt="" class="bd-placeholder-img" width="200" height="250">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+
+                        <h3 class="mb-0">Jeff Bezos</h3>
+
+                        <p class="card-text mb-auto">you're competitor-focused, you have to wait until there is a
+                            competitor
+                            doing something. Being customer-focused allows you to be more pioneering.</p>
+
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="./images/jeff.jpeg" alt="" class="bd-placeholder-img" width="200" height="250">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+
+                        <h3 class="mb-0">Steve Jobs</h3>
+
+                        <p class="mb-auto">
+                            Stay hungry,<br> stay foolish</p>
+
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="./images/steve.jpg" alt="" class="bd-placeholder-img" width="200" height="250">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section Ends -->
+
+    <!-- newsletter section -->
+    <!-- Three columns of text below the carousel -->
+   
+
+
+    <div class="container-fluid">
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <ul class="list-inline">
+                <!-- <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li> -->
+                <li class="list-inline-item"><a target="blank" href="https://www.facebook.com/dowhile03/"><i
+                            class="fab fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a target="blank" href="https://www.instagram.com/do_w_h_i_l_e"><i
+                            class="fab fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a target="blank"
+                        href="https://www.facebook.com/groups/526828638013161/?ref=share"><i
+                            class="fas fa-user"></i></a></li>
+                <li class="list-inline-item"><a target="blank"
+                        href="https://www.youtube.com/channel/UCxkb8cH1azkPFkxxjCTZElA"><i
+                            class="fab fa-youtube"></i></a></li>
+                <li class="list-inline-item"><a target="blank" href="https://www.twitter.com/dowhile03"><i
+                            class="fab fa-twitter"></i></a></li>
+            </ul>
+            <p class="mb-1">© 2020 Teamdowhile</p>
+
+
+        </footer>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyB505g7ENsCJpOu-9wis4XaWp813em6XMA",
+            authDomain: "authlogin-2ec70.firebaseapp.com",
+            databaseURL: "https://authlogin-2ec70.firebaseio.com",
+            projectId: "authlogin-2ec70",
+            storageBucket: "authlogin-2ec70.appspot.com",
+            messagingSenderId: "629150258327",
+            appId: "1:629150258327:web:b7c46801bafa10fed505d2",
+            measurementId: "G-15MKJ7XL1B"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <script src="loginGoogle/loginMe.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" type="html/css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" type="html/css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Blogs</title>
+    <link rel="icon" href="mages.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html">Teamdowhile</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link mr-3" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-3" href="../aboutus/about.html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-3 " href="../contactus/contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  mr-3" href="#" aria-disabled="false"
+                        href="https://drive.google.com/drive/folders/1yj85ifC2toG-3Lue0OfPxgYSUMskD3Ap?usp=sharing">Quizes</a>
+                </li>
+                <li class="nav-item"> <a class="nav-link mr-3" href="../blog/blogMain.html">Blog</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Videos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../htmlcourse/course.html">HTML</a>
+                        <a class="dropdown-item" href="../pythoncourse/Python.html">Python</a>
+                        <a class="dropdown-item" href="../javacourse/java.html">Java</a>
+                        <a class="dropdown-item" href="../knowledgebooster/Knowledge.html">Knowledge Booster</a>
+                    </div>
+                </li>
+
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 mr-3" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 mr-3" type="submit">Search</button>
+                <!-- <button type="button" class="btn btn-outline-primary mr-3"><a
+                        href="loginGoogle/login.html">Login</a></button> -->
+
+
+                <button type="button" class="btn btn-outline-warning" id="login_btn" data-toggle="modal"
+                    data-target="#exampleModal" style="display: initial;">
+                    LogIn
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Login With Security of Google</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                This is an Easy and one-click Login . This login is Authenticated by the security of
+                                Google.
+                                <br> Welcome to the Journey <br>
+                                -Teamdowhile
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-danger" data-dismiss="modal"
+                                    onclick="loginMe()">Login Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p id="helloUser" style="color: white; font-weight: bold;"></p>
+
+
+                <button type="button" id="logout_btn" class="btn btn-outline-info" onClick="logoutMe()"
+                    style="display: none;">Logout</button>
+
+
+            </form>
+        </div>
+    </nav>
+
+    <h1 style="text-align: center; margin: 1vw;">Teamdowhile Blogs</h1>
+    <div class="container marketing">
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="https://www.seekpng.com/png/detail/18-189525_android-images-png-clip-art-royalty-free-library.png"
+                                class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+                            <div class="card-body">
+                                <h3 class="card-text">Blog on Android Development</h3>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                                                href="blog.html">View</a></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="s.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+                            <div class="card-body">
+                                <h3 class="card-text">Blog on html : Start to web-Development</h3>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="k.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+                            <div class="card-body">
+                                <h3 class="card-text">Blog on Python language</h3>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <footer class="my-5 pt-5 text-muted text-center text-small" style="align-items:center;">
+                            <ul class="list-inline">
+                                <!-- <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li> -->
+                                <li class="list-inline-item"><a href="https://www.facebook.com/dowhile03/"><i
+                                            class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item"><a href="https://www.instagram.com/do_w_h_i_l_e"><i
+                                            class="fab fa-instagram"></i></a></li>
+                                <li class="list-inline-item"><a
+                                        href="https://www.facebook.com/groups/526828638013161/?ref=share"><i
+                                            class="fas fa-user"></i></a></li>
+                                <li class="list-inline-item"><a
+                                        href="https://www.youtube.com/channel/UCxkb8cH1azkPFkxxjCTZElA"><i
+                                            class="fab fa-youtube"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.twitter.com/dowhile03"><i
+                                            class="fab fa-twitter"></i></a></li>
+
+                            </ul>
+                            <p class="mb-1">© 2020 Teamdowhile</p>
+
+                        </footer>
+                    </div>
+                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                        crossorigin="anonymous"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                        crossorigin="anonymous"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+                        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+                        crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+                    <!-- Submit the Form to Google Using "AJAX" -->
+                    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+
+                    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase.js"></script>
+
+                    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+                    <script>
+                        var firebaseConfig = {
+                            apiKey: "AIzaSyB505g7ENsCJpOu-9wis4XaWp813em6XMA",
+                            authDomain: "authlogin-2ec70.firebaseapp.com",
+                            databaseURL: "https://authlogin-2ec70.firebaseio.com",
+                            projectId: "authlogin-2ec70",
+                            storageBucket: "authlogin-2ec70.appspot.com",
+                            messagingSenderId: "629150258327",
+                            appId: "1:629150258327:web:b7c46801bafa10fed505d2",
+                            measurementId: "G-15MKJ7XL1B"
+                        };
+                        // Initialize Firebase
+                        firebase.initializeApp(firebaseConfig);
+                        firebase.analytics();
+                    </script>
+
+                    <script src="/loginGoogle/loginMe.js"></script>
+                    <!-- END -->
+</body>
+
+</html>
